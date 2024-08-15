@@ -5,7 +5,8 @@ export const App = () => {
   const [output, setOutput] = useState(0);
 
   const calculate = () => {
-    const values = inputString.split(",");
+    const delimiter = "/n"
+    const values = inputString.split(delimiter);
 
     const output = values.reduce((a, b) => {
       return a + Number(b);
